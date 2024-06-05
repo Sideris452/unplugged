@@ -98,6 +98,7 @@ body {
   font-size: 1rem;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,ol {
@@ -111,9 +112,18 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,h4 {
@@ -162,6 +172,10 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+}
+
 .header-divider {
   background: #3a3a3a;
   width: 100%;
@@ -169,17 +183,22 @@ header .content-wrapper {
   margin: 10px 0 20px 0;
 }
 
-.header nav {
+header nav {
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
+  
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
@@ -209,9 +228,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -283,7 +310,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60%;
+  margin-bottom: 20%;
 }
 
 features article {
@@ -294,13 +321,17 @@ features article {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
   text-align: center;
-  margin: 0;
+  margin: 5%;
 }
 
 /*  Reviews  */
@@ -382,34 +413,6 @@ features article {
 .faq-content h4 {
   line-height: 1.333;
 }
-	
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
 
 
 /* ==========================================================================
@@ -632,7 +635,6 @@ footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
@@ -646,6 +648,11 @@ footer .footer-content {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
